@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+
 :root {
     --very-light-pink: #C7C7C7;
     --text-input-field: #F7F7F7;
@@ -12,7 +13,182 @@
     --black: #000000;
 }
 
-
 body {
     font-family: 'Quicksand', sans-serif;
+    
+}
+
+.inactive {
+    display: none;
+}
+
+
+
+.hamburger-img{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu {
+    display: block;
+}
+
+
+.nav {
+    display: flex;
+    width: 100%;
+    height: 76px;
+    background-color: darkcyan;
+    justify-content: space-between;
+    /* overflow: hidden; */
+    padding: 0 20px;
+}
+
+
+.nav__left-side {
+    display: flex;
+}
+
+
+.nav__img{
+    display: flex;
+}
+
+
+.nav__img img{
+    display: block;
+    width: 166px;
+}
+
+
+.nav__right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.nav__right-side h4 a {
+    user-select: none;
+    text-decoration: none;
+    color: var(--hospital-green);
+}
+
+
+.nav__img-cart img {
+    width: 40px;
+}
+
+
+.nav__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav__list {
+    display: flex;
+}
+
+
+.nav__list li{
+    list-style: none;
+    margin: 0 20px;
+}
+
+
+.nav__list a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 2px 7px;
+    /* margin: 0 20px; */
+}
+
+
+.nav__list a:hover {
+    color: var(--black);
+    /* border: 1px solid var(--hospital-green); */
+    border-radius: 8px; 
+    background-color: var(--white);
+}
+
+
+
+
+
+
+
+
+/* Desktop-menu styles*/
+.desktop-menu {
+    position: absolute;
+    width: 180px;
+    top: 75px;
+    right: 76px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    /* margin: 0 auto; */
+    border-radius: 6px;
+    
+}
+
+
+.desktop-menu ul {
+    list-style: none;
+}
+
+
+.desktop-menu ul li {
+    text-align: end;
+}
+
+
+.desktop-menu ul li a {
+    color: var(--black);
+    text-decoration: none;
+    display: inline-block;
+    margin: 16px;
+}
+
+
+.desktop-menu ul li:last-child {
+    padding-top: 20px;
+    border-top: 1px solid var(--very-light-pink);
+}
+
+
+.desktop-menu ul li:last-child a{
+    color: var(--hospital-green);
+    font-size: var(--sm-size);
+}
+
+
+.desktop-menu ul li:not(:last-child){
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 640px) {
+    .hamburger-img{
+        display: flex;
+    }
+    .nav__container {
+        display: none;
+    }
+    .nav__right-side h4 {
+    display: none;
+    }
+
 }

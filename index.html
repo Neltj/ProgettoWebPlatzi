@@ -4,13 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>ProgettoWeb</title>
+
+    <title>YardSale: Negozio online di prodotti nice</title>
+
 </head>
 <body>
+    <header class="nav">
+
+        <!-- Immagine di apertura menu -->
+        <figure class="hamburger-img">
+            <img src="icons/icon_menu.svg" alt="menu" class="menu">
+        </figure>
+
+
+        <!-- Parte sinistra del menu -->
+        <div class="nav__left-side">
+            <figure class="nav__img">
+                <img src="logos/logo_yard_sale.svg" alt="">
+            </figure>
+
+            <div class="nav__container">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav-item">All</a></li>
+                    <li><a href="#" class="nav-item">Clothes</a></li>
+                    <li><a href="#" class="nav-item">Electronics</a></li>
+                    <li><a href="#" class="nav-item">Furniture</a></li>
+                    <li><a href="#" class="nav-item">Others</a></li>
+                </ul>
+            </div>
+        </div>      
+
+
+        <!-- Parte destra del menu -->
+        <div class="nav__right-side">
+
+            <!-- email-utente -->
+            <h4>
+                <a href="#" class="navEmail">primaWeb@platzi.com</a>
+            </h4>
+
+            <figure class="nav__img-cart">
+                <img src="icons/icon_shopping_cart_notification.svg" alt="cart">
+            </figure>
+            
+        </div> 
+
+    </header>
+
+
+    <!-- desktop-menu  -->
+    <div class="desktop-menu inactive">
+        <ul>
+            <li>
+                <a href="#">My orders</a>
+            </li>
+
+            <li>
+                <a href="#">My account</a>
+            </li>
+
+            <li>
+                <a href="#">Sign out</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <script src="./script.js"></script>
     
 </body>
 </html>
