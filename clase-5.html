@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Struttura di login</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        }
+
+        :root {
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --sm-size: 14px;
+    --md-size: 16px;
+    --lg-size: 18px;
+        }
+
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .login {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: black;
+            
+        }
+
+
+        .form__container {
+            display: grid;
+            grid-template-rows: auto 1fr auto ;
+            width: 300px;
+            height: 100%;
+            background-color:  rgb(85, 85, 153);
+            border-radius: 8px;
+            padding: 3rem 1rem 0;
+        
+        }
+
+        .nav {
+            display: flex;
+            height: 76px;
+            background-color: darkcyan;
+            justify-content: space-between;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        .nav__left-side {
+            display: flex;
+        }
+
+        .nav__img{
+            display: flex;
+        }
+
+        .nav__img img{
+            display: block;
+            width: 178px;
+        }
+
+        .nav__right-side {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav__right-side h3 a {
+            text-decoration: none;
+            color: var(--hospital-green);
+        }
+
+
+        .nav__img-cart img {
+            width: 40px;
+        }
+
+        .nav__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+
+        .nav__list {
+            display: flex;
+        }
+
+
+
+        .nav__list li{
+            list-style: none;
+            margin: 0 20px;
+        }
+
+
+
+        .nav__list a {
+            text-decoration: none;
+            color: var(--white);
+            padding: 2px 7px;
+            /* margin: 0 20px; */
+        }
+
+
+        .nav__list a:hover {
+            color: var(--black);
+            /* border: 1px solid var(--hospital-green); */
+            border-radius: 8px; 
+            background-color: var(--white);
+        }
+
+
+        .logo {
+            width: 150px;
+            margin-bottom: 26px;
+            justify-self: center;
+            display: none;
+        }
+
+        .title {
+            font-size: var(--lg-size);
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: var(--very-light-pink);
+            font-size: var(--md-size);
+            font-weight: 300;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            justify-content: space-between;
+        }
+
+        
+
+        .form div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form__title {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .label {
+            font-size: var(--sm-size);
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        /* .input {
+            background-color: var(--text-input-field);
+            border-radius: 8px;
+            border: none;
+            height: 32px;
+            font-size: var(--md-size);
+            padding: 6px;
+            margin-bottom: 16px;
+            font-family: 'Quicksand', sans-serif;
+        } */
+
+        .value {
+            color: var(--very-light-pink);
+            margin: 9px 0 32px 0;
+        }
+
+
+        .primary-button {
+            background-color: var(--hospital-green);
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
+            cursor: pointer;
+            font-size: var(--md-size);
+            font-weight: bold;
+            height: 50px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .edit-button {
+            margin-top: 20px;
+            background-color: var(--white);
+            color: var(--hospital-green);
+            border: 2px solid var(--hospital-green)
+        }
+
+        
+
+
+        @media (max-width: 640px) {
+            .logo {
+                display: block;
+            }
+
+            .form__title {
+                margin-bottom: 30px;
+                text-align: start;
+            }
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- NAVIGATION -->
+    <header class="nav">
+        <div class="nav__left-side">
+            <figure class="nav__img">
+                <img src="logos/logo_yard_sale.svg" alt="">
+            </figure>
+            <div class="nav__container">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav-item">All</a></li>
+                    <li><a href="#" class="nav-item">Clothes</a></li>
+                    <li><a href="#" class="nav-item">Electronics</a></li>
+                    <li><a href="#" class="nav-item">Furniture</a></li>
+                    <li><a href="#" class="nav-item">Others</a></li>
+                </ul>
+            </div>
+        </div>
+       
+
+        <div class="nav__right-side">
+            <h3><a href="#">Sign in</a></h3>
+            <figure class="nav__img-cart">
+                <img src="icons/icon_shopping_cart_notification.svg" alt="cart">
+            </figure>
+            
+        </div>
+        
+    </header>
+
+
+
+    <!-- LOGIN -->
+    <div class="login">
+        <div class="form__container">
+            <img src="logos/logo_yard_sale.svg" alt="logo" class="logo">
+
+            <form action="/" class="form">
+                <div>
+                    <h2 class="form__title">My account</h2>
+                    
+                    <label for="email" class="label">Name</label>
+                    <p class="value">Frank Malca</p>
+
+                    <label for="email" class="label">Email address</label>
+                    <p class="value">f.malca@hotmail.com</p>
+
+                    <label for="password" class="label">Password</label>
+                    <p class="value">***************</p>
+
+                </div>
+
+                <input type="submit" value="Edit" class="primary-button edit-button">
+            
+        
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

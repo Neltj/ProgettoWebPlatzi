@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --sm-size: 14px;
+    --md-size: 16px;
+    --lg-size: 18px;
+        }
+
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .main__container {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .main__container li {
+            margin: 32px;
+            margin-right: 0;
+            list-style: none;
+            font-weight: bold;
+        }
+
+        .main__container li a {
+            text-decoration: none;
+            color: var(--black);
+        }
+
+        .container__list .list {
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+
+        .container__info ul li:last-child {
+            margin-top: -20px;
+        }
+
+        .container__info .email {
+            color: var(--very-light-pink);
+            font-size: var(--sm-size);
+            font-weight: 300;
+        }
+        
+        .container__info .signout {
+            color: var(--hospital-green);
+            font-size: var(--sm-size);
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+
+    <div class="main__container">
+
+        <div class="container__list">
+
+
+            <!-- first child of container__list -->
+            <div>
+
+                <ul class="list">
+
+                    <li>
+                        <a href="#">CATEGORIES</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">All</a>
+                    </li>
+                   
+                    <li>
+                        <a href="#">Clothes</a>
+                    </li>
+    
+                    <li>
+                        <a href="#">Electronics</a>
+                    </li>
+    
+                    <li>
+                        <a href="#">Furnitures</a>
+                    </li>
+    
+                    <li>
+                        <a href="#">Toys</a>
+                    </li>
+    
+                    <li>
+                        <a href="#">Others</a>
+                    </li>
+
+                </ul>
+
+            <!-- Second child of container__list -->
+                <ul>
+                     <li> 
+                        <a href="#">My orders</a>
+                    </li>
+                    <li>
+                        <a href="#">My account</a>
+                    </li> 
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="container__info">
+        
+                <ul>
+
+                    <li>
+                        <a href="#" class="email">f.malca@hotmail.com</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="signout">Sign out</a>
+                    </li>
+
+                </ul>
+    
+        </div>
+
+
+    </div>
+
+
+
+
+    
+</body>
+</html>

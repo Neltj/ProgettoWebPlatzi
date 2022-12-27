@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --sm-size: 14px;
+    --md-size: 16px;
+    --lg-size: 18px;
+        }
+
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+
+        .product-detail {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            height: 100vh;
+            justify-content: space-between;
+            padding-bottom: 26px;
+        }
+
+        .product-detail-images img:first-child {
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            top: 20px;
+            left: 20px;
+            padding: 8px;
+            background-color: var(--white);
+            border-radius: 50%;
+            cursor: pointer;
+            display: block;
+        }
+
+        .product-detail-images img:nth-child(2) {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .circle div {
+            width: 10px;
+            height: 10px;
+            background-color: var(--very-light-pink);
+            border-radius: 50%;
+        }
+
+        .circle div:first-child {
+            background-color: var(--hospital-green);
+        }
+
+
+        .product-info {
+            margin: 0 26px;
+        }
+
+        .product-info .price {
+            font-weight: bold;
+        }
+
+        .product-info .product {
+            margin: 10px 0 20px;
+        }
+        .product-info .product, .description {
+            color: var(--very-light-pink);
+        
+        }
+
+        .primary-button {
+            display: block;
+            height: 50px;
+            background-color: var(--hospital-green);
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
+            cursor: pointer;
+            font-weight: bold;
+            font-size: var(--md-size);
+            margin: 0 26px;
+        }
+
+        .add-to-cart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <aside class="product-detail">
+
+            <figure class="product-detail-images">
+                <img src="icons/icon_close.png" alt="">
+                <img src="img/bike.jpg" alt="">
+
+                <div class="circle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                
+            </figure>
+          
+       
+       
+
+        <div class="product-info">
+            <p class="price">$ 120,00</p>
+            <p class="product">Bike</p>
+            <p class="description">Questa bicicletta ha un prezzo eccezzionale per quello che fa. Ti porta dappertutto e superi le macchine in doppia fila come se non ci fossi un domani
+            </p>
+        </div>
+
+
+        <button class="primary-button add-to-cart">
+            <img src="icons/bt_add_to_cart.svg" alt="">Add to cart
+        </button>
+        
+
+
+
+    </aside>
+
+
+    
+</body>
+</html>
