@@ -15,24 +15,20 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    
 }
 
 .inactive {
     display: none;
 }
 
-
-
 .hamburger-img{
     display: none;
-    justify-content: center;
-    align-items: center;
 }
 
 
-.menu {
+.menu-hamburger{
     display: block;
+    cursor: pointer;
 }
 
 
@@ -42,7 +38,7 @@ body {
     height: 76px;
     background-color: darkcyan;
     justify-content: space-between;
-    /* overflow: hidden; */
+    overflow: hidden;
     padding: 0 20px;
 }
 
@@ -128,10 +124,9 @@ body {
     position: absolute;
     width: 180px;
     top: 75px;
-    right: 76px;
+    right: 75px;
     height: auto;
     border: 1px solid var(--very-light-pink);
-    /* margin: 0 auto; */
     border-radius: 6px;
     
 }
@@ -176,6 +171,54 @@ body {
 
 
 
+/*mobile-menu-hamburger */
+.mobile-menu {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    width: 40%;
+    /* height: 100vh; */
+    background-color: azure;
+
+}
+
+.mobile-menu li {
+    margin: 32px;
+    margin-right: 0;
+    list-style: none;
+    font-weight: bold;
+}
+
+.mobile-menu li a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.container__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container__list .list {
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.container__info ul li:last-child {
+    margin-top: -20px;
+}
+
+.container__info .email {
+    color: var(--very-light-pink);
+    font-size: var(--sm-size);
+    font-weight: 300;
+}
+
+.container__info .signout {
+    color: var(--hospital-green);
+    font-size: var(--sm-size);
+}
+
 
 
 
@@ -183,12 +226,33 @@ body {
 @media (max-width: 640px) {
     .hamburger-img{
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
     .nav__container {
         display: none;
     }
+
     .nav__right-side h4 {
-    display: none;
+        display: none;
     }
 
+    .desktop-menu {
+        display: none;
+    }
+
+    /* .mobile-menu {
+        display: none;
+    } */
+    
+
+   
+
 }
+
+@media (min-width: 641px) {
+    .mobile-menu {
+      display: none;
+    }
+  }
