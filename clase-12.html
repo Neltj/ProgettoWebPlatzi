@@ -29,31 +29,47 @@
             font-family: 'Quicksand', sans-serif;
         }
 
+
         .my-order {
-            margin: 20px 0 20px;
             display: flex;
-            /* height: 100vh; */
-            /* place-items: center; */
+            margin: 20px 40px 0 0;
+            flex-direction: row-reverse;
         }
+
 
         .my-order-container {
             display: grid;
-            margin: 0 auto;
-            width: 90%;
+            width: 300px;
             gap: 20px;
         }
 
-        .my-order-container p {
+        .title-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .arrow-img {
+            transform: rotate(180deg);
+        }
+
+        .my-order-container p:not(.title) {
             padding: 0 20px;
         }
 
+        .title {
+            font-size: var(--lg-size);
+            font-weight: bold;
+        }
 
-        .my-order-container .order {
+
+         .order {
             display: grid;
             grid-template-columns: auto 1fr;
             background-color: var(--text-input-field);
-            padding: 26px 0px;
-            border-radius: 16px;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
             font-weight: bold;
         }
 
@@ -96,14 +112,36 @@
             font-weight: bold;
         }
 
+        .primary-button {
+            width: 100%;
+            background-color: var(--hospital-green);
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
+            cursor: pointer;
+            font-size: var(--md-size);
+            font-weight: bold;
+            height: 50px;
+            font-family: 'Quicksand', sans-serif;
+            /* margin: 14px 0 30px; */
+        }
+
 
     </style>
 </head>
 <body>
 
+    
+
     <div class="my-order">
 
+
         <div class="my-order-container">
+
+            <div class="title-container">
+                <img src="./icons/flechita.svg" alt="arrow" class="arrow-img">
+                <p class="title">My Order</p>
+            </div>  
     
                 <div class="shopping-cart">
                     <figure>
@@ -187,6 +225,10 @@
                         <span>$ 560.00</span>
                     </p>
                 </div>
+
+                <button class="primary-button">Checkout</button>
+
+
         </div>
 
 
