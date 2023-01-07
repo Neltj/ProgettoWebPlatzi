@@ -246,8 +246,6 @@ body {
 
 .title-container {
     display: flex;
-    gap: 20px;
-    
 }
 
 .arrow-img {
@@ -261,6 +259,7 @@ body {
 .title {
     font-size: var(--lg-size);
     font-weight: bold;
+    margin-left: 20px;
 }
 
 
